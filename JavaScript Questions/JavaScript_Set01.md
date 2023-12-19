@@ -1,4 +1,4 @@
-## Question 1: What is the difference between `let` and `const`? What is the difference between `let` and `var`?
+### Question 1: What is the difference between `let` and `const`? What is the difference between `let` and `var`?
 
 |                  | `let`                                                               | `const`                                                                  | `var`                                                                       |
 | ---------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------ | --------------------------------------------------------------------------- |
