@@ -160,6 +160,6 @@ return function () {
 };
 }
 
-document.getElementById("orange").onclick = clickHandler("yellow");
+document.getElementById("orange").onclick = clickHandler("orange");
 document.getElementById("green").onclick = clickHandler("green");
 ```
