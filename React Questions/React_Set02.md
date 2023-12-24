@@ -113,3 +113,74 @@ const MyComponent = () => {
 };
 ```
 
+### When does a functional component rerender? (Explain lifecycle of functional components?)
+
+functional components are a type of component that is defined as a JavaScript function. With the introduction of React Hooks, functional components can now also have state and lifecycle features
+
+`Mounting Phase:`
+`useEffect with an empty dependency array ([]):`
+
+The code inside this useEffect runs after the first render. It is equivalent to componentDidMount in class components.
+This is where you perform actions that should only happen once when the component is mounted.
+useEffect with a cleanup function:
+
+If the useEffect function returns a cleanup function, it will be executed when the component is unmounted.
+This is equivalent to componentWillUnmount in class components.
+
+`Updating Phase:`
+`useEffect with dependencies:`
+
+If you pass dependencies to the dependency array in useEffect, the code inside the useEffect will run whenever any of those dependencies change.
+This is similar to the componentDidUpdate lifecycle method in class components.
+useEffect without dependencies:
+
+If you omit the dependency array, the useEffect code will run after every render.
+This is similar to componentDidUpdate in class components without a specific check for changes.
+
+`Unmounting Phase:`
+`Cleanup function in useEffect:`
+
+If the useEffect has a cleanup function, it will be executed when the component is unmounted.
+This is equivalent to componentWillUnmount in class components.
+
+### 7. When does the return statement of a functional component get called?
+
+The `return` statement is called during the initial render when the component is mounted.
+
+### 8. What is the use of useEffect React Hooks? When does the useEffect hook get called in the lifecycle of react functional components?
+
+useEffect is a React Hook that allows you to perform side effects in your functional components. Side effects can include data fetching, subscriptions, manually changing the DOM, or any other operations that are not part of the component rendering process.
+
+The useEffect hook gets called during the lifecycle of a React functional component in three main scenarios:
+
+`Mounting Phase:` When the component is initially rendered (mounted), the useEffect hook with an empty dependency array ([]) is called after the first render.
+
+```
+useEffect(() => {
+  // Code here runs after the first render (componentDidMount)
+  return () => {
+    // Cleanup code (componentWillUnmount)
+  };
+}, []);
+```
+
+`Updating Phase:` When the component is re-rendered due to changes in state or props, the useEffect hook with dependencies is called after each render.
+
+```
+useEffect(() => {
+  // Code here runs after every render (componentDidUpdate)
+  return () => {
+    // Cleanup code (runs before the next effect)
+  };
+}, [dependency1, dependency2]);
+```
+
+`Unmounting Phase:` If the useEffect hook returns a cleanup function, that cleanup function is called before the component is unmounted.
+
+```useEffect(() => {
+  // Code here runs after the first render (componentDidMount)
+  return () => {
+    // Cleanup code (componentWillUnmount)
+  };
+}, []);
+```
