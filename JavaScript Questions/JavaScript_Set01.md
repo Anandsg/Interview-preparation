@@ -14,7 +14,7 @@ This README provides a quick reference guide on the differences between `let`, `
 
 ### Question 2 : what is output of this function
 
-```
+```js
 function sample () {
 
 for (let i=0; i<=5;i++) {
@@ -28,7 +28,7 @@ There is a common issue related to the use of setTimeout inside a loop. The for 
 
 ### Question 3 : what is output of this
 
-```
+```js
 SetTimeout(()=> {
 console.log("a");
 },2000)
@@ -50,7 +50,7 @@ a
 
 ### Question 4: how can you print a first and b later with. You are not allowed to use any extra setTimeouts?
 
-```
+```js
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }

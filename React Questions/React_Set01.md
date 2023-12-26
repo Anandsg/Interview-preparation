@@ -30,7 +30,7 @@ useState is hook that allows functional components to manage state.
 
 Code example :
 
-```
+```js
 const App = () => {
   const [count, setIncrement] = useState(0); // UseState declaration
 
@@ -53,7 +53,7 @@ State variables: state variables are used to store and manage the mutable data o
 
 example of state variable:
 
-```
+```js
 import React, { useState } from "react";
 
 const App = () => {
@@ -66,7 +66,7 @@ export default App;
 
 Normal variables: Normal variables are mutable but changing them doesn't trigger a re-render in React.
 
-```
+```js
 import React from "react";
 const App = () => {
   const name1 = "Anand1";
@@ -81,7 +81,7 @@ export default App;
 
 key is a special attribute that is used to uniquely identify and differentiate between elements in a collection. Keys are primarily used when rendering lists of elements (such as an array of JSX elements) to help React identify which items have changed.
 
-```
+```js
 const ItemList = ({ items }) => {
   return (
     <ul>
@@ -112,7 +112,7 @@ When the state of a component changes, React creates a new virtual DOM tree repr
 
 `Controlled components` : React maintains and controls the state of the form elements. The component's state is managed through React, and any changes to the input values are handled by React through state updates.
 
-```
+```js
 import React, { useState } from "react";
 const App = () => {
   const [inputValue, setInputValue] = useState("");
@@ -139,7 +139,7 @@ In this example:
 
 `Uncontrolled Components:` The form element's state is not managed by React. Instead, the DOM itself handles the state, and React only interacts with the DOM when necessary.
 
-```
+```js
 import React, { useRef } from "react";
 const App = () => {
   const inputRef = useRef();

@@ -2,7 +2,7 @@
 
 `Props:` are a mechanism for passing data from a parent component to its child components in React. They allow you to communicate and share information between components
 
-```
+```js
 import React from "react";
 
 const Greet = (props) => {
@@ -26,7 +26,7 @@ Prop drilling occurs when a parent component generates its state and passes it d
 
 Example of props drilling :
 
-```
+```js
 import React, { useState } from "react";
 
 const App = () => {
@@ -34,7 +34,7 @@ const App = () => {
   return <Header profile={profile} />;
 };
 
-const Header = ({profile}) => {
+const Header = ({ profile }) => {
   return (
     <div>
       <h2>this is header</h2>
@@ -43,13 +43,13 @@ const Header = ({profile}) => {
   );
 };
 
-const Content = ({profile}) => {
+const Content = ({ profile }) => {
   return (
     <div>
       <h2>{profile.name}</h2>
     </div>
-  )
-}
+  );
+};
 
 export default App;
 ```
@@ -77,8 +77,8 @@ React Hooks are functions that enable functional components to use state and oth
 
 Hooks must always be called at the top level of a functional component or a custom hook. They should not be called conditionally or within loops, nested functions, or other control flow statements.
 
-```
-import React, { useState, useEffect } from 'react';
+```js
+import React, { useState, useEffect } from "react";
 
 const MyComponent = () => {
   const [count, setCount] = useState(0);
@@ -97,8 +97,8 @@ const MyComponent = () => {
 
 Hooks must only be called from functional components or custom hooks. They should not be called from regular JavaScript functions, class components, or any non-functional context.
 
-```
-import React, { useState, useEffect } from 'react';
+```js
+import React, { useState, useEffect } from "react";
 
 const MyComponent = () => {
   const [count, setCount] = useState(0);
@@ -155,7 +155,7 @@ The useEffect hook gets called during the lifecycle of a React functional compon
 
 `Mounting Phase:` When the component is initially rendered (mounted), the useEffect hook with an empty dependency array ([]) is called after the first render.
 
-```
+```js
 useEffect(() => {
   // Code here runs after the first render (componentDidMount)
   return () => {
@@ -166,7 +166,7 @@ useEffect(() => {
 
 `Updating Phase:` When the component is re-rendered due to changes in state or props, the useEffect hook with dependencies is called after each render.
 
-```
+```js
 useEffect(() => {
   // Code here runs after every render (componentDidUpdate)
   return () => {
@@ -177,7 +177,8 @@ useEffect(() => {
 
 `Unmounting Phase:` If the useEffect hook returns a cleanup function, that cleanup function is called before the component is unmounted.
 
-```useEffect(() => {
+```js
+useEffect(() => {
   // Code here runs after the first render (componentDidMount)
   return () => {
     // Cleanup code (componentWillUnmount)

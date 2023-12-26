@@ -4,7 +4,7 @@
 
 The CSS Box Model is a fundamental concept that describes the layout and sizing of elements on a web page. It conceptualizes each HTML element as a rectangular box with four main components: `content, padding, border, and margin.`
 
-```
+```js
 +-----------------------------------------+
 |                  Margin                 |
 |   +--------------------------------+    |
@@ -36,7 +36,7 @@ To align a block element inside another element, you can use CSS properties such
 
 for example:
 
-```
+```js
     .container {
       position: relative;
       width: 300px;
@@ -79,7 +79,7 @@ The Shadow DOM (Document Object Model) is a web standard that allows encapsulati
 
 for example:
 
-```
+```js
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -138,7 +138,7 @@ for example:
 
 ### 2. How to build a triangle in css? Give code example.
 
-```
+```js
 .tri {
   height: 0px;
   width: 0px;
@@ -152,7 +152,7 @@ for example:
 
 Pseudo-elements in CSS are used to style specific parts of an element. They allow you to style certain parts of an element's content or generate additional content without modifying the HTML markup. Pseudo-elements are denoted by a double colon (::) followed by the name of the pseudo-element.
 
-```
+```js
 ::before and ::after
 These pseudo-elements are used to insert content before and after the content of an element, respectively.
 ```
@@ -163,6 +163,6 @@ These attributes are prefixed with "data-" followed by a descriptive name, allow
 
 Synrax:
 
-```
+```js
 <div data-attribute-name="value">Content</div>
 ```

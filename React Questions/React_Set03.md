@@ -13,7 +13,7 @@ Optimizing the performance of a React application is crucial for delivering a sm
 
 Break your code into smaller chunks to be loaded on demand. This reduces the initial load time, Use React's React.`lazy` and Suspense for code splitting.
 
-```
+```js
 const MyComponent = React.lazy(() => import('./MyComponent'));
 
 const App = () => (
@@ -23,7 +23,7 @@ const App = () => (
 );
 ```
 
-```
+```js
 <img src="image.jpg" alt="Example" loading="lazy" />
 ```
 
@@ -31,7 +31,7 @@ const App = () => (
 
 Use the React.memo higher-order component to memoize functional components and prevent unnecessary renders.
 
-```
+```js
 const MemoizedComponent = React.memo(({ prop1, prop2 }) => {
   // Component logic
 });
@@ -41,7 +41,7 @@ const MemoizedComponent = React.memo(({ prop1, prop2 }) => {
 
 Use debouncing and throttling techniques to control the frequency of certain operations, like handling user input or resizing events.
 
-```
+```js
 import { debounce } from 'lodash';
 
 const handleSearch = debounce(searchFunction, 300);
@@ -53,7 +53,7 @@ parent-to-child communication is achieved by passing props from a parent compone
 
 `ParentComp.js`
 
-```
+```js
 import React, { useState } from "react";
 import ChildComp from "./ChildComp";
 
@@ -75,7 +75,7 @@ export default ParentComp;
 
 `ChildComp.js`
 
-```
+```js
 import React from "react";
 
 const ChildComp = ({ message, updateMsg }) => {
@@ -96,7 +96,7 @@ Communicating between sibling components in React typically involves lifting sta
 
 `Lifting State Up:` Lift the shared state up to a common ancestor (parent or higher-level component) and pass it down to both siblings as props.
 
-```
+```js
 // ParentComponent.jsx
 import React, { useState } from 'react';
 import SiblingComponentA from './SiblingComponentA';
@@ -120,7 +120,7 @@ const ParentComponent = () => {
 export default ParentComponent;
 ```
 
-```
+```js
 // SiblingComponentA.jsx
 import React from 'react';
 
@@ -137,7 +137,7 @@ const SiblingComponentA = ({ sharedState, updateSharedState }) => {
 export default SiblingComponentA;
 ```
 
-```
+```js
 // SiblingComponentB.jsx
 import React from 'react';
 
@@ -157,7 +157,7 @@ export default SiblingComponentB;
 
 Higher Order Components (HOCs) in React are functions that take a component and return a new enhanced component with additional props, state, or behavior
 
-```
+```js
 // HigherOrderComponent.jsx
 import React, { Component } from 'react';
 
@@ -182,7 +182,7 @@ const withEnhancement = (WrappedComponent) => {
 export default withEnhancement;
 ```
 
-```
+```js
 // OriginalComponent.jsx
 import React from 'react';
 import withEnhancement from './HigherOrderComponent';
@@ -200,7 +200,7 @@ const OriginalComponent = ({ additionalData, otherProp }) => {
 export default withEnhancement(OriginalComponent);
 ```
 
-```
+```js
 // App.jsx
 import React from 'react';
 import OriginalComponent from './OriginalComponent';
@@ -222,7 +222,7 @@ export default App;
 
 Custom hooks in React are functions that encapsulate reusable logic and can be shared across multiple components. They allow you to extract and share stateful logic, side effects, or any other functionality in a modular and reusable way.
 
-```
+```js
 // useCounter.js
 import { useState } from 'react';
 
@@ -253,7 +253,7 @@ In this example:
 - It uses the `useState` hook to manage the count state.
 - The hook returns an object with the current count value, as well as functions to increment and decrement the count.
 
-```
+```js
 // CounterComponent.jsx
 import React from 'react';
 import useCounter from './useCounter';

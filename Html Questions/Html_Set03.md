@@ -30,7 +30,7 @@ se it enhances user interaction and provides a more intuitive and dynamic user e
 
 `Making an Image Draggable in HTML5:`
 
-```
+```js
 <!DOCTYPE html>
 
 <-- Html body and other code-->

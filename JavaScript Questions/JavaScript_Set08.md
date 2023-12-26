@@ -3,7 +3,7 @@
 `Object Literal:`
 The most straightforward way to create an object is by using an object literal. An object literal is a comma-separated list of key-value pairs enclosed in curly braces {}.
 
-```
+```js
 var person = {
   name: "Anand",
   surName: "gadadgin",
@@ -15,7 +15,7 @@ var person = {
 `Constructor Function:`
 A constructor function is a regular function that is used with the `new` keyword to create instances of objects. It initializes properties and methods for the newly created object.
 
-```
+```js
 function Person (name, surName, phone) {
     this.name = name;
     this.surName = surName;
@@ -28,7 +28,7 @@ console.log(person)
 `Object.create() Method:`
 The Object.create() method allows you to create a new object with the specified prototype object. It provides a way to create objects based on an existing object, allowing for prototype-based inheritance.
 
-```
+```js
 var personPrototype = {
   sayHello: function () {
     console.log("Hello!");
@@ -49,7 +49,7 @@ console.log(person.name); // Output: Anand
 
 example normal function :
 
-```
+```js
 function add(x, y) {
   console.log(arguments);
   return x + y;
@@ -59,7 +59,7 @@ add(10, 2); // output will be printed with 2 arguements
 
 example arrow function :
 
-```
+```js
 const add1 = (x, y) => {
   console.log(arguments);
   return x + y;
@@ -72,7 +72,7 @@ add1(10, 2); // ReferenceError: arguments is not defined
 
 example normal function :
 
-```
+```js
 function Car (name) {
     this.brand = name;
 }
@@ -83,7 +83,7 @@ console.log(carData) // output we get new object using constructure
 
 example arrow function :
 
-```
+```js
 const Car = (name) => {
     this.brand = name;
 }
@@ -96,7 +96,7 @@ console.log(carData); // TypeError: Car is not a constructor
 
 Example of normal function:
 
-```
+```js
 const laptop= {
     name: 'MacBook',
     price: 80000,
@@ -110,7 +110,7 @@ console.log(laptop.description()); // Output will be - This is MacBook laptop of
 
 Example of arrow function:
 
-```
+```js
 const laptop = {
   name: "MacBook",
   price: 80000,
@@ -130,7 +130,7 @@ example :
 
 index.html
 
-```
+```js
   <body>
     <button id="orange">Orange</button>
     <button id="green">Green</button>

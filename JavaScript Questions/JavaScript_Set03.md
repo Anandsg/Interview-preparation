@@ -1,6 +1,7 @@
 ### Question 1: What is output of this.
 
-```setImmediate(() => {
+```js
+setImmediate(() => {
   console.log("first");
 });
 
@@ -47,7 +48,8 @@ second
 
 ### Question 4 : What is output ?
 
-```let a = new Promise((resolve, reject) => {
+```js
+let a = new Promise((resolve, reject) => {
   reject({ msg: 'Something went wrong' });
 });
 
@@ -73,7 +75,7 @@ Something went wrong
 
 ### Question 5 : what is output ?
 
-```
+```js
 async function myFunction() {
   await delay(6000);
 
@@ -101,7 +103,7 @@ first      -->  is printed after 10 seconds
 
 A function definition in programming is a block of code that specifies the actions or computations performed by a function when it is invoked or called. In JavaScript, a function can be defined using the `function` keyword. Here's the basic syntax for function definition:
 
-```
+```js
 function functionName(parameters) {
   // Code block or statements
   // Actions or computations to be performed

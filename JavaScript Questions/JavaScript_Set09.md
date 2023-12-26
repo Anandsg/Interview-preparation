@@ -4,7 +4,7 @@ To iterate through the values inside an object without printing the keys, you ca
 
 Example:
 
-```
+```js
 const myObject = {
   key1: 'value1',
   key2: 'value2',
@@ -25,7 +25,7 @@ NaN stands for "Not-a-Number." It is a special value that represents the result 
 
 Example:
 
-```
+```js
 const result = "Hello" / 2;
 console.log(result); // Output: NaN
 ```
@@ -34,7 +34,7 @@ console.log(result); // Output: NaN
 
 `Pass by Value:` In pass by value, a copy of the actual value is passed to the function. The original value is not affected by any changes made to the parameter inside the function.
 
-```
+```js
 function updateValue(value) {
   value = 42;
 }
@@ -46,7 +46,7 @@ console.log(originalValue); // Output: 10 (unchanged)
 
 `Pass by Reference:` JavaScript is always pass by value, but when objects (including arrays and functions, which are objects) are passed as arguments to functions, their reference is passed. This means that changes made to the object inside the function will affect the original object outside the function.
 
-```
+```js
 function updateArray(array) {
   array.push(42);
 }
@@ -66,7 +66,7 @@ console.log(originalArray); // Output: [1, 2, 3, 42] (changed)
 
 A higher-order function is a function that takes one or more functions as arguments or returns a function as its result.
 
-```
+```js
 // Higher-order function that takes a function as an argument
 function executeOperation(operation, value) {
   return operation(value);

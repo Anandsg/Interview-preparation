@@ -4,7 +4,7 @@
 
 example:
 
-```
+```js
 async function fetchData() {
   try {
     const result = await fetch('https://api.example.com/data');
@@ -22,7 +22,7 @@ The `await` keyword can only be used inside functions marked with the async keyw
 
 ### 3. What will the output of this be?
 
-```
+```js
 async fun fun1() {
 console.log('a');
 console.log('b');
@@ -63,7 +63,7 @@ explaintation :
 
 To ensure that await works as expected with setTimeout, we can use a Promise-based approach. The setTimeout function does not inherently return a Promise
 
-```
+```js
 async function fun1() {
   console.log('a');
   console.log('b');
@@ -98,7 +98,7 @@ e
 
 callback is a function passed as an argument to another function, which is then invoked inside the outer function. Callbacks are commonly used in asynchronous programming to handle tasks that depend on the completion of a prior operation.
 
-```
+```js
 function fetchData(callback) {
   // Simulating an asynchronous operation
   setTimeout(() => {

@@ -3,7 +3,7 @@
 `let and const:`
 let and const provide block-scoped variable declarations, improving variable scoping in comparison to var. let is mutable, allowing reassignment, while const is immutable once assigned.
 
-```
+```js
 let x = 5;
 const PI = 3.14;
 ```
@@ -12,7 +12,7 @@ const PI = 3.14;
 
 Arrow functions introduce a concise syntax for writing functions, especially useful for short anonymous functions. They inherit the this value from their enclosing scope.
 
-```
+```js
 // Traditional function
 function add(x, y) {
   return x + y;
@@ -35,7 +35,7 @@ const greeting = `Hello, ${name}!`;
 
 The spread (...) and rest (...) operators enable working with arrays and object literals more conveniently. Spread is used for spreading elements, while rest is used for collecting elements.
 
-```
+```js
 // Spread operator for arrays
 const arr1 = [1, 2, 3];
 const arr2 = [...arr1, 4, 5];
@@ -50,7 +50,7 @@ function sum(...numbers) {
 
 ES6 introduced the class syntax for creating classes in JavaScript. It provides a more familiar and convenient way to define and instantiate objects with constructor functions.
 
-```
+```js
 class Person {
   constructor(name, age) {
     this.name = name;
@@ -67,7 +67,7 @@ class Person {
 
 ES6 introduced two new built-in data structures, Map and Set. Map allows the use of any data type as a key, and Set stores unique values.
 
-```
+```js
 // Map
 const myMap = new Map();
 myMap.set('key', 'value');
@@ -84,7 +84,7 @@ const mySet = new Set([1, 2, 3, 1]);
 `call:`
 The call method is used to invoke a function with a specified this value and individual arguments provided as separate arguments.
 
-```
+```js
 let name = {
   firstName: "Anand",
   lastName: "Gadugin",
@@ -108,7 +108,7 @@ printFullName.call(name2, "Hubli");
 The apply method is similar to call, but it takes an array-like object as its second argument, which represents the arguments to be passed to the function.
 javascript
 
-```
+```js
 let name = {
   firstName: "Anand",
   lastName: "Gadugin",
@@ -131,7 +131,7 @@ printFullName.call(name2, ["Hubli", "Blr"]); // like this
 `bind:`
 The bind method creates a new function with the same body as the original function but with a fixed this value. The new function can be invoked later.
 
-```
+```js
 // Using bind
 let boundFunction = printFullName.bind(name, "Gadag");
 boundFunction();
@@ -139,7 +139,7 @@ boundFunction();
 
 So basically
 
-```
+```js
 let name = {
   firstName: "Anand",
   lastName: "Gadugin",
@@ -178,7 +178,7 @@ boundFunction();
 
 Generator functions are a special type of function in JavaScript introduced with ECMAScript 2015 (ES6). They allow you to pause and resume the execution of a function, yielding values one at a time. Generator functions are denoted by the use of the function\* syntax and the yield keyword.
 
-```
+```js
 function* generateNumbers() {
   yield 1;
   yield 2;
@@ -198,7 +198,7 @@ console.log(generator.next()); // { value: undefined, done: true }
 `forEach:`
 Purpose: forEach is used for iterating over each element in an array and performing an operation on each element. (it does not create a new array).
 
-```
+```js
 const numbers = [1, 2, 3, 4, 5];
 
 numbers.forEach((num, index) => {
@@ -208,7 +208,7 @@ numbers.forEach((num, index) => {
 
 output:
 
-```
+```js
 Element at index 0: 1
 Element at index 1: 2
 Element at index 2: 3
@@ -219,7 +219,7 @@ Element at index 4: 5
 `map:`
 Purpose: map is used for creating a new array by applying a function to each element of the original array. (A new array containing the results of applying the provided function to each element.)
 
-```
+```js
 const output = arr.map(double);
 
 console.log(output);
@@ -232,7 +232,7 @@ console.log(output2);
 `filter:`
 Purpose: filter is used for creating a new array with elements that satisfy a specific condition. (A new array containing elements that pass the test implemented by the provided function.)
 
-```
+```js
 const numbers = [1, 2, 3, 4, 5];
 
 const evenNumbers = numbers.filter(num => num % 2 === 0);

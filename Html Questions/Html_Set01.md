@@ -35,7 +35,7 @@ unordered lists, and definition lists
 
 for example:
 
-```
+```js
 <ol>
   <li>First item</li>
   <li>Second item</li>
@@ -47,7 +47,7 @@ for example:
 
 for example:
 
-```
+```js
 <ul>
   <li>Item one</li>
   <li>Item two</li>
@@ -59,7 +59,7 @@ for example:
 
 for example:
 
-```
+```js
 <dl>
   <dt>Term 1</dt>
   <dd>Definition 1</dd>
@@ -82,7 +82,7 @@ The `id` attribute is used to uniquely identify a single HTML element on a page.
 
 for example:
 
-```
+```js
 <div id="header">This is the header.</div>
 ```
 

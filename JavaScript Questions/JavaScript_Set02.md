@@ -2,7 +2,7 @@
 
 process.nextTick is a method in Node.js that allows a callback to be added to the next tick of the event loop. It provides a way to execute a callback function immediately after the current event loop cycle, before continuing with any other I/O events or timers.
 
-```
+```js
 console.log("Start");
 
 process.nextTick(() => {
@@ -18,7 +18,7 @@ In this example, "Start" and "End" will be printed first, and then "Next Tick Ca
 
 To check if a variable is an array in JavaScript, you can use the Array.isArray() method.
 
-```
+```js
 let myVariables = [1,2,3,4];
 if(Array.isArray(myVariables)){
   console.log("This is an array");

@@ -8,7 +8,7 @@
 
 Example:
 
-```
+```js
 '5' == 5;           // true (String '5' is coerced to Number 5)
 false == 0;         // true (Boolean false is coerced to Number 0)
 null == undefined;  // true (null and undefined are considered equal)
@@ -21,7 +21,7 @@ null == undefined;  // true (null and undefined are considered equal)
 
 Example:
 
-```
+```js
 '5' === 5;           // false (String '5' is not equal to Number 5 in value and type)
 false === 0;         // false (Boolean false is not equal to Number 0 in type)
 null === undefined;  // false (null and undefined are not equal in type)
@@ -31,21 +31,21 @@ null === undefined;  // false (null and undefined are not equal in type)
 
 undefined: A variable or property is `undefined` when it has been declared but has not been assigned a value.
 
-```
+```js
 let x;
 console.log(x); // Output: undefined
 ```
 
 null: The null value represents the intentional absence of any object value. It is often used to indicate that a variable or property should have no value or point to no object.
 
-```
+```js
 let y = null;
 console.log(y); // Output: null
 ```
 
 ### 3. what will the output (true or false) of the following be?Explain why?
 
-```
+```js
 console.log(null === undefined)
 
 console.log(null == undefined)
@@ -53,7 +53,7 @@ console.log(null == undefined)
 
 The output for the given code will be:
 
-```
+```js
 console.log(null === undefined); // false
 console.log(null == undefined);  // true
 ```
@@ -69,7 +69,7 @@ Example for bubbling:
 
 index.html with 3 divs
 
-```
+```js
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -98,7 +98,7 @@ index.html with 3 divs
 
 index.js
 
-```
+```js
 document.querySelector("#grandparent").addEventListener("click", () => {
   console.log("grand parent clicked");
 }, false);
@@ -115,7 +115,7 @@ document.querySelector("#child").addEventListener("click", () => {
 
 output:
 
-```
+```js
 child clicked
 parent clicked
 grand parent clicked
@@ -128,7 +128,7 @@ grand parent clicked
 
 Example for capturing:
 
-```
+```js
 document.querySelector("#grandparent").addEventListener("click", () => {
   console.log("grand parent clicked");
 }, true);
@@ -156,7 +156,7 @@ Function currying is a technique in functional programming where a function is t
 
 Example:
 
-```
+```js
 let multiply = (x, y) => {
   console.log(x * y);
 };
@@ -178,7 +178,7 @@ multiplyByThree(5); // Output: 15
 
 An Immediately Invoked Function Expression (IIFE) is a function expression that is defined and executed immediately after its creation. It is a common JavaScript pattern used to create a private scope for variables, avoid polluting the global namespace, and execute code immediately.
 
-```
+```js
 (function() {
   // Code inside this function is executed immediately
   console.log('IIFE executed!');

@@ -2,7 +2,7 @@
 
 React Router is a standard library for routing in React applications. It enables the navigation and dynamic rendering of components based on the URL. React Router helps you build single-page applications where different components are displayed based on the route
 
-```
+```js
 // App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
@@ -50,7 +50,7 @@ export default App;
 
 Let's say we have two sibling components, Sender and Receiver, and we want to pass data from Sender to Receiver through the URL.
 
-```
+```js
 // App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
@@ -93,7 +93,7 @@ export default App;
 
 useMemo is a React Hook that is used for memoization. It memoizes the result of a computation, ensuring that the computation is only re-executed when the dependencies change. This can be particularly useful when you have expensive calculations or operations that you want to avoid repeating on every render.
 
-```
+```js
 import React, { useState, useMemo } from 'react';
 
 const FactorialCalculator = ({ number }) => {

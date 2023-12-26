@@ -8,7 +8,7 @@ When multiple elements overlap in a web page, the z-index property determines th
 
 ### What is the best practice of using it?
 
-```
+```js
     .box {
       width: 100px;
       height: 100px;
@@ -45,7 +45,7 @@ Flexbox, or the Flexible Box Layout, is a layout model in CSS designed to make t
 
 We can implement the above patter with below CSS code:
 
-````
+````js
 /* Row reverse */
 .container {
  list-style-type: none;

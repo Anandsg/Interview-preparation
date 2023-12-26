@@ -12,7 +12,7 @@ In HTML and CSS, there are several ways to control the display of elements on a 
 
 `block:` The element generates a block-level box. It starts on a new line and stretches the full width of its containing element. Examples: `<div>, <p>, <h1> to <h6>, <ul>, <ol>, <li>, <table>, <form>,` etc.
 
-```
+```js
 .block-element {
   display: block;
 }
@@ -20,7 +20,7 @@ In HTML and CSS, there are several ways to control the display of elements on a 
 
 `inline:` The element generates an inline-level box. It does not start on a new line, and only takes up as much width as necessary. Examples: `<span>, <a>, <strong>, <em>, <img>, <br>,` etc.
 
-```
+```js
 .inline-element {
   display: inline;
 }
@@ -29,7 +29,7 @@ In HTML and CSS, there are several ways to control the display of elements on a 
 `inline-block:` The element generates an inline-level box, but it behaves as a block-level box.
 It does not start on a new line and takes up as much width as necessary, but you can apply width and height to it.
 
-```
+```js
 .inline-block-element {
   display: inline-block;
 }
@@ -45,13 +45,13 @@ It does not start on a new line and takes up as much width as necessary, but you
 
 In HTML, the `<a>` (anchor) tag is used to create hyperlinks, allowing users to navigate to another web page
 
-```
+```js
 <a href="URL">Link Text</a>
 ```
 
 the target attribute in the `<a>` tag. The target attribute specifies how the linked content should be displayed. It can take different values:
 
-```
+```js
 <a href="https://www.example.com" target="_self">Visit Example.com</a>
 
 ```
@@ -76,7 +76,7 @@ There are several ways to specify CSS styles for HTML elements. The choice of me
 
 `Internal Styles (Style Tag):`
 
-```
+```js
 <head>
   <style>
     selector {
@@ -102,7 +102,7 @@ There are several ways to specify CSS styles for HTML elements. The choice of me
 
 ` Scripts in the <head>:` Scripts that are essential for the structure or initial rendering of the webpage. Scripts that load external resources (e.g., stylesheets or libraries) needed for the page.
 
-```
+```js
 <head>
   <script src="https://example.com/library.js"></script>
   <script>
@@ -119,7 +119,7 @@ There are several ways to specify CSS styles for HTML elements. The choice of me
 
 `Scripts at the End of <body>:` Scripts that enhance user interactions, manipulate the DOM, or are not critical for the initial page load. Deferred scripts that do not block the rendering of the initial page content.
 
-```
+```js
 <head>
   <!-- Stylesheets and critical scripts -->
 </head>
@@ -137,7 +137,7 @@ There are several ways to specify CSS styles for HTML elements. The choice of me
 
 `Creating Forms in HTML:` To create a form in HTML, we use the `<form>` element. Within the `<form>` element, you can include various input elements, buttons, and other form-related elements. Here's a basic example:
 
-```
+```js
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -166,7 +166,7 @@ By default, when a user submits a form, the data is sent to the URL specified in
 
 Handling events directly in the HTML markup using inline event attributes. This method is straightforward but can be less maintainable for complex applications.
 
-```
+```js
 <button onclick="handleButtonClick()">Click me</button>
 
 <script>
@@ -190,7 +190,7 @@ To include audio or video in a webpage, you can use the `<audio> `and `<video>` 
 
 `<audio> Element for Audio:`
 
-```
+```js
 <audio controls>
   <source src="audio.mp3" type="audio/mp3">
   Your browser does not support the audio tag.
@@ -199,7 +199,7 @@ To include audio or video in a webpage, you can use the `<audio> `and `<video>` 
 
 `<video> Element for Video:`
 
-```
+```js
 <video width="640" height="360" controls>
   <source src="video.mp4" type="video/mp4">
   Your browser does not support the video tag.

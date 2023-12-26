@@ -4,7 +4,7 @@
 
 example:
 
-```
+```js
 console.log(x)
 var x = 10;
 ```
@@ -13,7 +13,7 @@ var x = 10;
 
 example:
 
-```
+```js
 function fetchData(callback) {
   // Simulating an asynchronous operation
   setTimeout(() => {
@@ -56,7 +56,7 @@ console.log(doubledNumbers); // Output: [2, 4, 6, 8]
 - `Return Value:` It returns a new array containing only the elements that meet the specified condition.
 - `Usage:` It is commonly used when you want to filter elements based on a particular criterion.
 
-```
+```js
 const numbers = [1, 2, 3, 4];
 
 const evenNumbers = numbers.filter((number) => number % 2 === 0);
@@ -70,7 +70,7 @@ In JavaScript, objects do not have a built-in length property like arrays. Howev
 
 example:
 
-```
+```js
 const myObject = { a: 1, b: 2, c: 3 };
 
 const numberOfProperties = Object.keys(myObject).length;

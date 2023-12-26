@@ -6,7 +6,7 @@ Reconciliation in React refers to the process of updating the user interface to 
 
 In React, fragments are a way to group multiple children elements without adding an additional parent container to the DOM. They are represented by the React.Fragment component or the shorthand syntax `<>...</>`
 
-```
+```js
 import React from 'react';
 
 const MyComponent = () => {
